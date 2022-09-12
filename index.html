@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital@1&family=Heebo:wght@300&family=Hind+Siliguri&family=Joan&family=Montserrat&family=Noto+Serif&family=Overpass:wght@200;400&family=PT+Sans:ital@1&family=Pacifico&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP FILE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="scss file/style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <!-- NAV-BAR -->
+        <nav id="nav-bar" class="d-flex justify-content-between align-items-center p-2">
+            <!-- logo -->
+           <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+           </div>
+           <!-- end logo -->
+           <!-- list container -->
+           <div class="list-container bg-white">
+            <ul class="items-list d-flex align-items-center text-uppercase m-0 flex-column flex-md-row">
+                <li class="item me-2"><a href="#">home</a></li>
+                <li class="item me-2"><a href="#">about</a> </li>
+                <li class="item"><a href="#">store</a></li>
+            </ul>
+           </div>
+           <!-- end list-container-no -->
+           <!-- contact -->
+           <div class="contact-no">
+               <i class="fa-solid fa-phone"></i> 
+               <span>+ 1234567890</span>
+           </div>
+           <!-- end contact-no -->
+           <!-- cart toggle button -->
+           <div class="toggle-cart px-2 py-1 rounded">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            <span class="number-of-items"> 0 items</span>
+            <span class="total-price">$0</span>
+           </div>
+           <!-- end cart toggle button -->
+
+           <!-- BAR BTN -->
+           <div id="bar-btn" class="d-md-none">
+            <i class="fa-solid fa-bars fs-4"></i>
+           </div>
+           <!-- END BAR BTN -->
+        </nav>
+        <!-- END NAV-BAR -->
+        <!-- HERO -->
+        <div class="hero d-flex justify-content-center align-items-center flex-column text-capitalize position-relative overflow-hidden">
+            <h1 class="hero-heading text-white fw-bold mb-3"> welcome to <span class="diff-color">grandma's</span></h1>
+            <a href="#" class="explore">explore</a>
+             <!-- CART -->
+            <div id="cart" class="cart-container position-absolute p-3 overflow-scroll" aria-expanded="false">
+                <h4 class="text-capitalize empty-msg text-center">your cart is empty!</h4>
+                 <!-- cart items list -->
+               <ul class="cart-items-list p-0">
+                <!-- cart item -->
+                <!-- <li class="cart-item d-flex justify-content-between align-items-center mb-2">
+                    <img class="cart-item-img" src="images/cart-img/1.jpg" alt="cart-item-image">
+                    <p class="cart-item-name m-0 fw-bold">mango cake <span class="cart-item-price">11.10</span></p>
+                    <i class="fa-solid fa-trash"></i>
+                </li> -->
+                <!-- end cart item -->
+               </ul>
+               <!-- end of cart item list -->
+               <div class="fw-bold">
+                <p class="text-center m-0 fs-5"> total: <span class="total-price fs-5">$0</span></p>
+               </div>
+            </div>
+            <!-- END CART -->
+        </div>
+        <!-- END HERO -->
+    </header>
+    <!-- END HEADER -->
+    
+   <!-- MAIN -->
+   <main>
+    <!-- ABOUT US SECTION -->
+    <section id="about-us" class="container-fluid">
+        <!-- about center -->
+        <div class="about-us-center row row-cols-2 justify-items-center">
+            <!-- about left-side -->
+            <div class="about-left">
+                <h1 class="text-capitalize fw-bold mb-4">about <span>us</span></h1>
+                <p class="mb-4">taste delecious dishes with us, quia voluptatum, officia deserunt ducimus ipsa, reiciendis quidem voluptatem veritatis hic quos? Est sit ad reprehenderit vitae repellendus natus temporibus. lorem10' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor explicabo hic. Rem eos dicta, minima exercitationem placeat repellendus libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi id beatae a recusandae sit deleniti quia tenetur, dolorum accusamus voluptate.</p>
+                <a href="#" class="explore">explore</a>
+            </div>
+            <!-- end about left-side -->
+            <!-- about right-side -->
+            <div class="about-right border border-4 border-warning p-0 position-relative ms-auto">
+               <img class="positionmd-md-absolute" src="images/cart/3.jpg" alt="about-img"> 
+            </div>
+            <!-- end about right-side -->
+        </div>
+        <!-- end about center -->
+    </section>
+    <!-- END ABOUT US SECTION -->
+
+    <!-- OUR STORE SECTION -->
+    <section id="our-store" class="p-5">
+        <!-- main heading -->
+       <h1 class="text-uppercase fw-bold text-center mb-3">our <span>store</span></h1>
+       <!-- end main heading -->
+
+       <!-- buttons -->
+       <div class="button d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center gap-md-5">
+        <button type="button" class="btn btn-outline-warning  text-uppercase" data-id="all">all</button>
+        <button type="button" class="btn btn-outline-warning  text-uppercase" data-id="cake">cakes</button>
+        <button type="button" class="btn btn-outline-warning  text-uppercase" data-id="cupcake">cupcakes</button>
+        <button type="button" class="btn btn-outline-warning text-uppercase"  data-id="pastry">pastries</button>
+       </div>
+      <!-- end buttons -->
+
+      <!-- search input -->
+      <div id="search-input" class="input-group mb-3 mt-3 w-50 mx-auto">
+        <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-search"></i> </span>
+        <input type="text" class="form-control" placeholder="Item..." aria-label="Username" aria-describedby="basic-addon1" autofocus>
+      </div>
+      <!-- end search input -->
+
+      <!-- store items container -->
+      <div id="store-items-container" class="container mt-5">
+         <!-- store items row -->
+         <div class="row">
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cupcake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/2.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">cup cake</p>
+                    <span class="text-capitalize fs-5">$5</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/3.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">red valvate</p>
+                    <span class="text-capitalize fs-5">$55</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cupcake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/4.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">chocolate cup cake</p>
+                    <span class="text-capitalize fs-5">$15</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cupcake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/5.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">valnela cup cake</p>
+                    <span class="text-capitalize fs-5">$25</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="pastry">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/6.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">mango pestry</p>
+                    <span class="text-capitalize fs-5">$20</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/7.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">chocolate cake</p>
+                    <span class="text-capitalize fs-5">$95</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cupcake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/8.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">mix cup cake</p>
+                    <span class="text-capitalize fs-5">$25</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/9.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">full chocholate cake</p>
+                    <span class="text-capitalize fs-5">$110.10</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/10.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">dry fruits cake</p>
+                    <span class="text-capitalize fs-5">$99.12</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/11.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">mango with red valvet</p>
+                    <span class="text-capitalize fs-5">$255</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cupcake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/12.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">cup cake purple</p>
+                    <span class="text-capitalize fs-5">$5.15</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cupcake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/13.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">gilass mix cupcake</p>
+                    <span class="text-capitalize fs-5">$10.5</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/1.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">mango cake</p>
+                    <span class="text-capitalize fs-5">$115.10</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/15.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">honny cake</p>
+                    <span class="text-capitalize fs-5">$155</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="cake">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/16.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">sweet cake</p>
+                    <span class="text-capitalize fs-5">$115.10</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="pastry">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/17.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">strowberry pastry</p>
+                    <span class="text-capitalize fs-5">$9.33</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="pastry">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/18.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">dryfruites pastry</p>
+                    <span class="text-capitalize fs-5">$45.99</span>
+                </div>
+             </div>
+              <!-- end store item -->
+            <!-- store item -->
+            <div class="store-item bg-white p-0 rounded-1" data-category="pastry">
+                <div class="store-item-img position-relative">
+                    <img src="images/cart/19.jpg" alt="item-img" class="rounded-top">
+                    <div class="store-cart-icon position-absolute p-3">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="store-item-info px-4 py-3 d-flex justify-content-between align-items-center">
+                    <p class="mb-0 text-capitalize fs-5">cherry pastry</p>
+                    <span class="text-capitalize fs-5">$30.45</span>
+                </div>
+             </div>
+              <!-- end store item -->
+         </div>
+         <!-- end store items row -->
+      </div>
+      <!-- end store items -->
+    </section>
+    <!-- END OUR STORE SECTION -->
+   </main>
+   <!-- END MAIN -->
+
+   <!-- JAVASCRIPT LINKAGE -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -85,14 +85,13 @@
 
     // SHOW TOTAL FUNCTION //
     function showTotal(){
-        let total= [];
         let cartItemPrice = document.querySelectorAll('.cart-item-price');
+        let total= [];
         
         cartItemPrice.forEach(price => {
             total.push(Number(price.textContent.slice(1)))
         });
 
-        console.log(total)
         
 
        total = total.reduce((acc,curr) => {

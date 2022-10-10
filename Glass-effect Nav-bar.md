@@ -7,4 +7,5 @@ After setting background as transparent, one have to give it blur effect with "b
 As soon as both the things are done, one will get a glass-effect.
 
 Thank You, Please follow and share my Git-Hub account to get more interesting content.
+You can also follow me on my Instagram account @lavu001.
 
